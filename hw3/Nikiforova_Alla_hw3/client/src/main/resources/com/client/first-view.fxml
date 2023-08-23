@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.client.FirstWindowController">
+    <padding>
+        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="mainLabel" text="Клавогонки" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    <Label fx:id="labelAddress" text="Адрес сервера"/>
+    <TextField fx:id="textFieldAddress" promptText="localhost" focusTraversable="false"/>
+
+    <Label fx:id="labelPort" text="Порт"/>
+    <TextField fx:id="textFieldPort" promptText="8888" focusTraversable="false"/>
+
+    <Label fx:id="labelName" text="Ваше имя"/>
+    <TextField fx:id="textFieldName" promptText="Прекрасный человек" focusTraversable="false"/>
+
+    <Button fx:id="buttonPlay" text="Играть" onAction="#openSecondWindow"/>
+    <Button fx:id="buttonAboutGame" text="Об игре" onAction="#showAlertAbout"/>
+<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+</VBox>
